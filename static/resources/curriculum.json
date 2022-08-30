@@ -1,0 +1,28 @@
+{
+    "curriculum":[
+        {
+            "name": "네트워크 구축",
+            "description": "네트워크 시뮬레이터 Packet Tracer로 네트워크 토폴로지 구성을 실습합니다."
+        },
+        {
+            "name": "웹 기초",
+            "description": "웹의 기본이 되는 HTML, CSS, JavaScript 를 배웁니다."
+        },
+        {
+            "name": "Node.js",
+            "description": "JavaScript 를 이용하는 백엔드를 공부해 웹 / 서버에 대한 기초를 습득합니다."
+        },
+        {
+            "name": "React.js",
+            "description": "웹 / 앱(RN)의 View를 개발할 수 있도록 하는 라이브러리를 통해 프론트엔드의 기초를 습득합니다."
+        },
+        {
+            "name": "서버구축",
+            "description": "네트워크 시뮬레이터 GNS3와 실습서버를 사용하여 서버를 구축합니다."
+        },
+        {
+            "name": "팀프로젝트",
+            "description": "팀프로젝트를 통해 배운 내용을 정리, 응용하는 능력을 기르고, 협업능력을 높입니다."
+        }
+    ]
+}

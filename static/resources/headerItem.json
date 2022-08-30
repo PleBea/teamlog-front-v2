@@ -1,0 +1,21 @@
+{
+  "header":
+    [
+      {
+        "url": "/introduce",
+        "name": "소개"
+      },
+      {
+        "url": "/curriculum",
+        "name": "커리큘럼"
+      },
+      {
+        "url": "/reward",
+        "name": "수상"
+      },
+      {
+        "url": "/successful",
+        "name": "합격자 목록"
+      }
+    ]
+}

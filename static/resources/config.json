@@ -1,0 +1,16 @@
+{
+  "title": "Teamlog 2022",
+  "background_img": "teamlog_background.jpeg",
+  "king": [
+    {
+      "role": "부장",
+      "name": "양승찬",
+      "tel": "010-2278-9517"
+    },
+    {
+      "role": "쀼장",
+      "name": "박건우",
+      "tel": "010-6367-7631"
+    }
+  ]
+}
