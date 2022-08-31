@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
 
-  padding: var(--pading);
+  padding: var(--padding);
   display: flex;
   align-items:center;
 
@@ -16,16 +16,15 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    
+
     & p {
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 800;
     }
   }
 
   &_menu {
     width: 100%;
-    
 
     & ul {
       display: flex;
