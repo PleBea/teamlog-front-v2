@@ -6,8 +6,37 @@
   position: fixed;
   top: 0;
 
+  padding: var(--pading);
+  display: flex;
+  align-items:center;
+
   &_logo {
     width: 35px;
     height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    
+    & p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &_menu {
+    width: 100%;
+    
+
+    & ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 50px;
+      font-weight: 700;
+      color: var(--gray_1);
+    }
+
+    &_selected {
+      color: var(--black_1);
+    }
   }
 }

@@ -2,12 +2,14 @@
   <div class="header">
     <div class="header_logo">
       <img src="~/static/assets/images/teamlog_logo.png" alt="logo" />
+      <p>Teamlog.</p>
     </div>
     <div class="header_menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li 
+        v-for="(i,k) in header" 
+        :key="k"
+        :class="{header_menu_selected: $nuxt.$router.path === i.url }"><a href="#">{{ i.name }}</a></li>
       </ul>
     </div>
   </div>
@@ -15,8 +17,28 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
+import { application, headerItems } from '@/types/index'
+const header_json = require('../static/resources/headerItem.json')
+const application_json = require('../static/resources/application.json')
 
+export default Vue.extend({
+  name: 'Header',
+  data() { 
+    return {
+      header: [] as headerItems[],
+    }
+  },
+  mounted() {
+    let application = application_json as application
+    let header = header_json.header as headerItems[]
+    let today = new Date()
+
+    if ( application.application_start <= today && application.application_end >= today && header.length < 5 ) {
+      header.push(application.json)
+    }
+
+    this.header = header
+  },
 })
 </script>
 
