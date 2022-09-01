@@ -6,7 +6,7 @@
   &_scroll {
     position: absolute;
     bottom: -60px;
-    right: 0;
+    right: 35px;
   }
 
   &_description {
@@ -34,7 +34,7 @@
     }
 
     & p {
-      font-weight: 600;
+      font-weight: 500;
       line-height: 34px;
       font-size: 17px;
       text-align: right;
@@ -50,8 +50,6 @@
     height: 205px;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.10) transparent;
     position: relative;
 
     &::-webkit-scrollbar {

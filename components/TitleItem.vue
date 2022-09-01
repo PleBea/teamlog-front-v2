@@ -1,12 +1,8 @@
 <template>
-    <div class="section title" :style=backgroundImg>
-      <div class="title_wrapper">
+    <section id="" class="section title" :style=backgroundImg>
         <h1>WE ARE<br>TEAMLOG.</h1>
         <p>Feel the Change, Make the Change</p>
-      </div>
-
-      <img src="/assets/images/teamlog_logo.png" alt="팀로그 로고 사진">
-    </div>
+    </section>
 </template>
 
 <script lang="ts">

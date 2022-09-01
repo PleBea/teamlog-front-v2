@@ -42,6 +42,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['vue-scrollto/nuxt', { 
+      container: "body",
+      duration: 1200,
+      easing: "ease",
+      offset: 0,
+      force: true,
+      cancelable: true,
+      onStart: false,
+      onDone: false,
+      onCancel: false,
+      x: false,
+      y: true
+    }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

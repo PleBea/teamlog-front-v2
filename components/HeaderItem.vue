@@ -4,14 +4,15 @@
       <img src="~/static/assets/images/teamlog_logo.png" alt="logo" />
       <p>Teamlog.</p>
     </div>
-    <div class="header_menu">
+    <div class="header_menu" id="menu">
       <ul>
         <li 
         v-for="(i,k) in header" 
         :key="k"
-        :class="{header_menu_selected: $nuxt.$router.path === i.url }"><a href="#">{{ i.name }}</a></li>
+        :class="{active: /* scroll change */ }"><a href="#" v-scroll-to="'#special'">{{ i.name }}</a></li>
       </ul>
     </div>
+
   </div>
 </template>
 
@@ -38,6 +39,10 @@ export default Vue.extend({
     }
 
     this.header = header
+
+    setInterval(() => {
+
+    }, 1000)
   },
 })
 </script>

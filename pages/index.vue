@@ -1,9 +1,8 @@
 <template>
   <div class="index">
-    <full-page>
-      <TitleItem />
-      <AwardItem />
-    </full-page>
+    <TitleItem />
+    <AwardItem />
+    <SpecialItem />
   </div>
 </template>
 
@@ -11,10 +10,16 @@
 import Vue from 'vue'
 import TitleItem from '~/components/TitleItem.vue';
 import AwardItem from '~/components/AwardItem.vue';
+import SpecialItem from '~/components/SpecialItem.vue';
 
 export default Vue.extend({
     name: "IndexPage",
-    components: { TitleItem, AwardItem }
+    components: { TitleItem, AwardItem, SpecialItem },
+    data() {
+      return {
+        
+      }
+    }
 })
 </script>
 

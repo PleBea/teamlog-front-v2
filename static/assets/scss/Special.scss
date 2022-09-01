@@ -1,0 +1,45 @@
+.special {
+    padding: var(--padding);
+
+    &_list {
+      display: flex;
+      padding: 0 2vw;
+      margin-top: 87px;
+      align-items: center;
+    }
+
+    &_item {
+      display: flex;
+      gap: 20px;
+
+      &s {
+        background-color: #f8f8f8;
+        border-radius: 20px;
+        width: 230px;
+        height: 230px;
+      }
+    }
+
+    &_description {
+      margin-left: auto;
+      text-align: right;
+
+      & h1 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 58px;
+      }
+  
+      & strong {
+        font-weight: 800;
+      }
+  
+      & p {
+        margin-top: 10px;
+        font-weight: 500;
+        line-height: 34px;
+        font-size: 17px;
+        text-align: right;
+      }
+    }
+}
