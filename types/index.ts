@@ -19,3 +19,9 @@ export interface special {
     title: string;
     description: string;
 }
+
+export interface king {
+  role: string;
+  name: string;
+  tel: string;
+}

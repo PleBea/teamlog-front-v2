@@ -42,11 +42,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ['vue-scrollto/nuxt', { 
+    ['vue-scrollto/nuxt', {
       container: "body",
-      duration: 1200,
+      duration: 600,
       easing: "ease",
-      offset: 0,
+      offset: -80,
       force: true,
       cancelable: true,
       onStart: false,

@@ -1,5 +1,5 @@
 <template>
-    <section id="" class="section title" :style=backgroundImg>
+    <section id="title" class="section title" :style=backgroundImg>
         <h1>WE ARE<br>TEAMLOG.</h1>
         <p>Feel the Change, Make the Change</p>
     </section>

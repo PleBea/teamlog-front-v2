@@ -6,10 +6,10 @@
     </div>
     <div class="header_menu" id="menu">
       <ul>
-        <li 
-        v-for="(i,k) in header" 
+        <li
+        v-for="(i,k) in header"
         :key="k"
-        :class="{active: /* scroll change */ }"><a href="#" v-scroll-to="'#special'">{{ i.name }}</a></li>
+        ><a href="#" v-scroll-to="`#${i.id}`">{{ i.name }}</a></li>
       </ul>
     </div>
 
@@ -24,7 +24,7 @@ const application_json = require('../static/resources/application.json')
 
 export default Vue.extend({
   name: 'Header',
-  data() { 
+  data() {
     return {
       header: [] as headerItems[],
     }

@@ -2,19 +2,19 @@
   "header":
     [
       {
-        "url": "/introduce",
+        "id": "title",
         "name": "소개"
       },
       {
-        "url": "/curriculum",
-        "name": "커리큘럼"
-      },
-      {
-        "url": "/reward",
+        "id": "award",
         "name": "수상"
       },
       {
-        "url": "/successful",
+        "id": "special",
+        "name": "특색"
+      },
+      {
+        "id": "/successful",
         "name": "합격자"
       }
     ]

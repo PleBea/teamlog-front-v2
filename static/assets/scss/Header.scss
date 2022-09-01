@@ -10,6 +10,9 @@
   display: flex;
   align-items:center;
 
+  z-index: 1000;
+
+
   &_logo {
     width: 35px;
     height: 35px;
@@ -31,10 +34,6 @@
       justify-content: flex-end;
       gap: 50px;
       font-weight: 700;
-      color: var(--gray_1);
-    }
-
-    &_selected {
       color: var(--black_1);
     }
   }

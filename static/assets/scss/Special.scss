@@ -10,6 +10,7 @@
 
     &_item {
       display: flex;
+      flex-wrap: wrap;
       gap: 20px;
 
       &s {
@@ -29,11 +30,11 @@
         font-size: 30px;
         line-height: 58px;
       }
-  
+
       & strong {
         font-weight: 800;
       }
-  
+
       & p {
         margin-top: 10px;
         font-weight: 500;
