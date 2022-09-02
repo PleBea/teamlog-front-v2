@@ -8,14 +8,18 @@
       <img src="~/static/assets/images/hamburger.svg" alt="">
     </button>
     <div class="header_menu" id="menu" :class="{header_show: showMenu}">
+      <img @click="toggleHeader" class="header_x" src="~/static/assets/images/x.svg" alt="">
       <ul>
         <li
         v-for="(i,k) in header"
         :key="k"
-        ><nuxt-link href="#" v-scroll-to="`#${i.id}`" :to="i.url">{{ i.name }}</nuxt-link></li>
+        @click="toggleHeader"
+        ><nuxt-link v-scroll-to="`#${i.id}`" :to="i.url">{{ i.name }}</nuxt-link></li>
       </ul>
     </div>
 
+    <div v-if="showMenu" class="header_bg" @click="toggleHeader">
+    </div>
   </div>
 </template>
 
