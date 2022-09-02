@@ -1,25 +1,46 @@
 .curriculum {
-    width: 100%;
-    margin-top: 80px;
-    padding: var(--padding);
-    display: flex;
+  width: 100%;
+  margin-top: 80px;
+  padding: var(--padding);
+  display: flex;
+
+  &_description {
+    padding: 0 2vw;
+
+    & h1 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 58px;
+    }
+
+    & strong {
+      font-weight: 800;
+    }
+
+    & p {
+      margin-top: 10px;
+      font-weight: 500;
+      line-height: 34px;
+      font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 0 20px;
+    }
 
     &_description {
-        & h1 {
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 58px;
-        }
+      & h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
 
-        & strong {
-            font-weight: 800;
-        }
-
-        & p {
-            margin-top: 10px;
-            font-weight: 500;
-            line-height: 34px;
-            font-size: 17px;
-        }
+      & p {
+        display: none;
+      }
     }
+  }
 }

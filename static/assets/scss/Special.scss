@@ -10,7 +10,7 @@
 
     &_item {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 20px;
 
       &s {
@@ -40,7 +40,7 @@
             transition-duration: 0.5s;
             opacity: 0;
         }
-        
+
         & img {
             position: absolute;
             transform: translate(-50%, -50%);
@@ -81,8 +81,8 @@
                 opacity: 1;
             }
 
-            & {
-                width: 370px;
+            &:hover {
+              width: auto;
             }
         }
       }
@@ -108,6 +108,121 @@
         line-height: 34px;
         font-size: 17px;
         text-align: right;
+        width: 405px;
       }
     }
+
+  @media screen and (max-width: 1515px) {
+    &_list {
+      flex-direction: column-reverse;
+    }
+
+    &_item {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    &_description {
+      margin-left: 0;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      & h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1182px) {
+    &_description {
+      & p {
+        font-size: 14px;
+        line-height: 26px;
+      }
+
+      & h1 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &_description {
+      & p {
+        font-size: 12px;
+        line-height: 26px;
+      }
+
+      & h1 {
+        font-size: 26px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1045px) {
+    &_item {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px ) {
+
+    & {
+      padding: 0 5vw;
+    }
+
+    &_description {
+      margin-left: 0;
+      text-align: left;
+
+      & h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+
+    &_list {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    &_item {
+      width: 100%;
+      &s {
+        width: 100%;
+        height: auto;
+
+        & h1 {
+          font-size: 20px;
+          line-height: 40px;
+          font-weight: 700;
+        }
+
+        & p {
+          width: auto;
+          font-size: 14px;
+          line-height: 24px;
+        }
+
+        & img {
+          height: 80%;
+        }
+      }
+    }
+
+
+  }
 }
