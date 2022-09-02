@@ -1,6 +1,6 @@
 <template>
     <section id="title" class="section title" :style=backgroundImg>
-        <h1>WE ARE<br>TEAMLOG.</h1>
+        <h1><span v-for="(i, k) in title.top" :key="k">{{ i }}</span><br><span v-for="(i, k) in title.bottom" :key="k">{{ i }}</span></h1>
         <p>Feel the Change, Make the Change</p>
     </section>
 </template>
@@ -13,12 +13,18 @@ export default Vue.extend({
     name: 'Title',
     data() {
         return {
-            backgroundImg: {}
+            backgroundImg: {},
+            title: {}
         }
     },
     mounted() {
         this.backgroundImg = {
             "background-image": `linear-gradient(rgba(20, 23, 32, 0.7), rgba(20, 23, 32, 0.7)), url("/assets/images/${config_json.background_img}")`
+        }
+
+        this.title = {
+            "top": ['WE', 'ARE'],
+            "bottom": ['T','E','A','M','L','O','G','.']
         }
     }
 })

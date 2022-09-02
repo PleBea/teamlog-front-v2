@@ -6,7 +6,9 @@
                 class="special_items"
                 v-for="(i, k) in special"
                 :key="k">
-                    <p>{{ i.title }}</p>
+                    <h1>{{ i.title }}</h1>
+                    <img :src="`/assets/images/${i.img}`">
+                    <p>{{ i.description }}</p>
                 </div>
             </div>
             <div class="special_description">

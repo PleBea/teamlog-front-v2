@@ -1,23 +1,9 @@
 {
-    "information": [
-        {
-            "category": "부원",
-            "value": 96
-        },
-        {
-            "category": "수상",
-            "value": 118
-        },
-        {
-            "category": "활동",
-            "value": "149+"
-        }
-    ],
     "special": [
         {
             "img": "pencil.svg",
             "title": "교육방향",
-            "description": "TeamLog에서는 '모두가 만족스러운 수업' 을 목표로 하여 시간 낭비가 아닌, 오고 싶은 수업, 의미있는 경험을 얻어 갈 수 있는 수업이 될 수 있도록 노력하고 있습니다."
+            "description": "저희는 '모두가 만족스러운 수업' 을 목표로 하여 시간 낭비가 아닌, 의미있는 경험을 얻어 갈 수 있는 수업이 될 수 있도록 노력하고 있습니다."
         },
         {
             "img": "moon.svg",

@@ -1,0 +1,25 @@
+.curriculum {
+    width: 100%;
+    margin-top: 80px;
+    padding: var(--padding);
+    display: flex;
+
+    &_description {
+        & h1 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 58px;
+        }
+
+        & strong {
+            font-weight: 800;
+        }
+
+        & p {
+            margin-top: 10px;
+            font-weight: 500;
+            line-height: 34px;
+            font-size: 17px;
+        }
+    }
+}

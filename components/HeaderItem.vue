@@ -1,15 +1,18 @@
 <template>
   <div class="header">
-    <div class="header_logo">
+    <nuxt-link tag="div" :to="'/'" class="header_logo">
       <img src="~/static/assets/images/teamlog_logo.png" alt="logo" />
       <p>Teamlog.</p>
-    </div>
-    <div class="header_menu" id="menu">
+    </nuxt-link>
+    <button class="header_button" @click="toggleHeader">
+      <img src="~/static/assets/images/hamburger.svg" alt="">
+    </button>
+    <div class="header_menu" id="menu" :class="{header_show: showMenu}">
       <ul>
         <li
         v-for="(i,k) in header"
         :key="k"
-        ><a href="#" v-scroll-to="`#${i.id}`">{{ i.name }}</a></li>
+        ><nuxt-link href="#" v-scroll-to="`#${i.id}`" :to="i.url">{{ i.name }}</nuxt-link></li>
       </ul>
     </div>
 
@@ -27,6 +30,16 @@ export default Vue.extend({
   data() {
     return {
       header: [] as headerItems[],
+      showMenu: false as boolean,
+    }
+  },
+  methods: {
+    home() {
+      location.href = '/'
+      console.log(1)
+    },
+    toggleHeader() {
+      this.showMenu = !this.showMenu
     }
   },
   mounted() {
@@ -39,10 +52,6 @@ export default Vue.extend({
     }
 
     this.header = header
-
-    setInterval(() => {
-
-    }, 1000)
   },
 })
 </script>

@@ -3,19 +3,23 @@
     [
       {
         "id": "title",
-        "name": "소개"
+        "name": "소개",
+        "url": "/"
       },
       {
         "id": "award",
-        "name": "수상"
+        "name": "수상",
+        "url": "/"
       },
       {
         "id": "special",
-        "name": "특색"
+        "name": "특색",
+        "url": "/"
       },
       {
         "id": "/successful",
-        "name": "합격자"
+        "name": "합격자",
+        "url": "/successful"
       }
     ]
 }

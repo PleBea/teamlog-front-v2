@@ -1,6 +1,7 @@
 export interface headerItems {
     url: string;
     name: string;
+    id: string;
 }
 
 export interface application {

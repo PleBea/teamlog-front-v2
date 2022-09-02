@@ -10,7 +10,7 @@
         <p>서울 용산구 원효로97길 33-4 선린인터넷고등학교</p>
         <div class="footer_social_logo">
           <a href="https://github.com/teamlog2022/"><img src="~/static/assets/images/github.svg" alt="github" /></a>
-          <a href="https://facebook.com"><img src="~/static/assets/images/facebook.svg" alt="facebook" /></a>
+          <a href="https://facebook.com/sunrintog"><img src="~/static/assets/images/facebook.svg" alt="facebook" /></a>
         </div>
       </div>
       <div class="footer_right">

@@ -93,4 +93,35 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    & {
+      margin-top: 60px;
+      padding: 0 20px;
+    }
+
+    &_description{
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+
+      & h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 35px;
+      }
+
+      & p {
+        display: none;
+      }
+    }
+
+    &_list {
+      margin-top: 20px;
+    } 
+
+    &::after {
+      content: 'Slide →';
+      margin-left: 10px;
+    }
+  }
 }

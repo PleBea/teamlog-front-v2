@@ -14,23 +14,38 @@
   justify-content: center;
   align-items: center;
 
-& h1 {
+  @media screen and (max-width: 768px) {
+    & {
+      height: 400px;
+    }
+
+    & h1 {
+      font-size: 50px !important;
+      line-height: 60px !important;  
+    }
+
+    & p {
+      font-size: 14px !important;
+      line-height: 24px !important;
+    }
+  }
+
+  & h1 {
     font-size: 70px;
     font-weight: 600;
     line-height: 84px;
     text-align: center;
-}
+  }
 
-& p {
+  & span {
+    animation: downUp 1s ease;
+  }
+
+  & p {
     font-size: 17px;
     font-weight: 500;
-}
-
-  & img {
-    width: 265px;
-    height: 265px;
-    margin-right: 20px;
-    margin-left: auto;
+    animation-delay: 200ms;
+    animation: downUp 1.5s ease;
   }
 
 }
