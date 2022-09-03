@@ -17,7 +17,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/assets/images/teamlog_logo.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/assets/images/teamlog_logo.png' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css' }
     ]
   },
 
@@ -59,5 +60,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
   }
 }

@@ -5,6 +5,10 @@
         </div>
         <div class="curriculum_item">
 
+          <div class="curriculum_items">
+            
+          </div>
+
         </div>
     </section>
 </template>
