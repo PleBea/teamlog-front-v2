@@ -17,9 +17,9 @@
         "url": "/"
       },
       {
-        "id": "/successful",
-        "name": "합격자",
-        "url": "/successful"
+        "id": "curriculum",
+        "name": "커리큘럼",
+        "url": "/"
       }
     ]
 }

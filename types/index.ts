@@ -26,3 +26,8 @@ export interface king {
   name: string;
   tel: string;
 }
+
+export interface curriculum {
+  name: string;
+  description: string;
+}

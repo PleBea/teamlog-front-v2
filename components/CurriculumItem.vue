@@ -1,12 +1,15 @@
 <template>
-    <section class="section curriculum">
-        <div class="curriculum_description">
-            <h1><strong>이러한 커리큘럼</strong>이<br />준비되어 있습니다.</h1>
-        </div>
+    <section class="section curriculum" id="curriculum">
+      <p class="curriculum_text">Shift + Scroll</p>
+      <h1 class="curriculum_title"><strong>이러한 커리큘럼</strong>이<br />준비되어 있습니다.</h1>
         <div class="curriculum_item">
 
-          <div class="curriculum_items">
-            
+          <div
+          class="curriculum_items"
+          v-for="(i, k) in curriculum"
+          :key="k">
+            <h1>{{ i.name }}</h1>
+            <p>{{ i.description }}</p>
           </div>
 
         </div>
@@ -15,8 +18,16 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
+import { curriculum } from '@/types/index'
+const curriculum_json = require('@/static/resources/curriculum.json').curriculum
 
+export default Vue.extend({
+  name: 'CurriculumItem',
+  data () {
+    return {
+      curriculum: curriculum_json as curriculum[]
+    }
+  }
 })
 </script>
 

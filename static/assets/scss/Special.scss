@@ -22,6 +22,7 @@
         transition-delay: 0.4s 0s;
         position: relative;
         transition-duration: 1s;
+        overflow: hidden;
 
         & h1 {
             font-weight: 600;
@@ -34,7 +35,6 @@
         & p {
             font-weight: 500;
             line-height: 34px;
-            width: 350px;
             font-size: 17px;
             transition-delay: 0s;
             transition-duration: 0.5s;
@@ -57,7 +57,6 @@
         &:hover > p {
             transition-duration: 0.8s;
             opacity: 1;
-            transition-delay: 0.8s;
         }
 
         &:hover > img {

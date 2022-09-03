@@ -40,7 +40,6 @@ export default Vue.extend({
   methods: {
     home() {
       location.href = '/'
-      console.log(1)
     },
     toggleHeader() {
       this.showMenu = !this.showMenu
